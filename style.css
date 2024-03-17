@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(to right, #F0F3FF, #9195F6);
+}
+
+nav {
+    background-color: #7F27FF;
+    margin: 0;
+    padding: 0 20px ;
+    font-size: 15px;
+    display: flex;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1px auto;
+    padding: 0 20px;
+    font-weight: 600;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.nav-items a:hover {
+    color: #B5C0D0;
+}
+
+.account {
+    display: flex;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.sign {
+    border-radius: 10px;
+    padding: 0px 15px;
+    margin: 10px;
+    font-weight: 600;
+    border: none;
+}
+
+.sign:hover {
+    color: white;
+    background-color: #9F70FD;
+}
+
+.head-2 {
+    width: 55%;
+    display: inline;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 70px;
+    display: flex;
+}
+
+.dropdown {
+    display: inline-block;
+    padding: 20px;
+}
+
+.dropdown-button {
+    padding: 10px 30px;
+    font-size: 17px;
+    border-radius: 15px;
+    margin: 4px;
+    background-color: #836FFF;
+    font-weight: 600;
+    border: none;
+    font-size: 14px;
+    color: white;
+}
+
+.dropdown-button:focus,
+.dropdown-button:hover {
+    color: #B5C0D0;
+    background-color: #7F27FF;
+}
+
+form {
+    border-radius: 15px;
+    background-color: #9195F6;
+    width: 400px;
+    padding-top: 5px;
+    visibility: hidden;
+    margin-left: 20px;
+}
+
+form.visible {
+    visibility: visible;
+}
+
+form label {
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+form div {
+    margin: 20px 10px;
+}
+
+form input {
+    background-color: #F0F3FF;
+    margin: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    width: 90%;
+}
+
+form input:focus {
+    outline: none;
+}
+
+.submit {
+    padding: 10px 30px;
+    font-size: 17px;
+    border-radius: 15px;
+    margin: 4px;
+    background-color: white;
+    font-weight: 600;
+    border: none;
+    font-size: 14px;
+    width: 87%;
+    margin-left: 18px;
+    margin-bottom: 10px;
+}
+
+.submit:hover {
+    color: white;
+    background-color: #7F27FF;
+}
+
+.submit:checked {
+    color: white;
+    background-color: #7F27FF;
+}
+
+.head {
+    display: flex;
+}
+
+img {
+    display: inline;
+    width: 45%;
+    height: 500px;
+}
+
+.closed {
+    background-color: white;
+    margin-top: 20px;
+}
+
+.closed h2 {
+    margin: 0;
+    padding: 0 30px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.superiority {
+    display: flex;
+    padding: 2px 30px;
+}
+
+.superiority-content1 {
+    width: 1000px;
+}
+
+.superiority-content2 {
+    width: 1000px;
+}
