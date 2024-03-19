@@ -2,6 +2,9 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -13,7 +16,7 @@ body {
 nav {
     background-color: #7F27FF;
     margin: 0;
-    padding: 0 20px ;
+    padding: 0 20px;
     font-size: 15px;
     display: flex;
 }
@@ -25,6 +28,27 @@ nav {
     justify-content: center;
     display: flex;
     color: white;
+}
+
+.dropdownbutton {
+    padding: 0px;
+    width: 40px;
+    height: 26px;
+    display: none;
+    top: 7px;
+    left: 5px;
+}
+
+
+
+.bar {
+    padding: 3px 3px;
+    margin: 1px;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    float: left;
 }
 
 .nav-items {
@@ -77,11 +101,12 @@ h1 {
     font-weight: bold;
     font-size: 70px;
     display: flex;
+    box-sizing: border-box;
 }
 
 .dropdown {
-    display: inline-block;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .dropdown-button {
@@ -107,8 +132,10 @@ form {
     background-color: #9195F6;
     width: 400px;
     padding-top: 5px;
+    padding-right: 20px;
     visibility: hidden;
     margin-left: 20px;
+    box-sizing: border-box;
 }
 
 form.visible {
@@ -131,7 +158,7 @@ form input {
     margin: 5px 10px;
     border-radius: 5px;
     border: none;
-    width: 90%;
+    width: 100%;
 }
 
 form input:focus {
@@ -141,13 +168,14 @@ form input:focus {
 .submit {
     padding: 10px 30px;
     font-size: 17px;
-    border-radius: 15px;
+    border-radius: 10px;
     margin: 4px;
     background-color: white;
     font-weight: 600;
     border: none;
     font-size: 14px;
-    width: 87%;
+    width: 120px;
+    display: inline-block;
     margin-left: 18px;
     margin-bottom: 10px;
 }
@@ -187,12 +215,130 @@ img {
 .superiority {
     display: flex;
     padding: 2px 30px;
+    margin-top: 5px;
 }
 
-.superiority-content1 {
+.superiority-content {
     width: 1000px;
 }
 
-.superiority-content2 {
-    width: 1000px;
+
+
+@media only screen and (min-width: 1130px) {
+    img{
+        width: 696px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    h1 {
+        position: absolute;
+        width: 100%;
+        font-size: 60px;
+    }
+    img{
+        position: absolute;
+        top: 120px;
+        right: 0px;
+        width: 460px;
+        height: 350px;
+    }
+    .dropdown {
+        position: relative;
+        top: 70px;
+    }
+    form {
+        position: relative;
+        height: 80%;
+        width: 300px;
+        top: 55px;
+    }
+    .closed {
+        position: relative;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .dropdown {
+        position: relative;
+        top: 120px;
+    }
+    form {
+        position: relative;
+        top: 110px;
+    }
+    .closed {
+        position: relative;
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .superiority {
+        display: inline-block;
+    }
+    .superiority-content {
+        margin: 20px;
+    }
+}
+@media only screen and (max-width: 811px) {
+    .dropdownbutton {
+        position: absolute;
+        display: block;
+    }
+    .dropdownbtn {
+        margin: 0px;
+        padding: 0 7px;
+        background-color: transparent;
+        border: transparent;
+        cursor: pointer;
+    }
+    .title {
+        margin-left: 170px;
+        position: absolute;
+        height: 165px;
+    }
+    nav {
+        margin: 0;
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+    .nav-items {
+        visibility: hidden;
+        position: relative;
+        display: inline-block;
+        left: 0px;
+        top: 50px;
+        margin: 0;
+        padding: 0;
+        top: 30px;
+        left: -20px;
+        height: 160px;
+    }
+    .nav-items a {
+        display: block;
+        margin: 14px;
+        font-size: 14px;
+        display: block;
+    }
+    .account {
+        margin-top: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 12px 0;
+    }
+    .sign {
+        padding: 5px 15px;
+        margin: 0 7px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    img {
+        top: 240px;
+        width: 360px;
+        height: 250px;
+    }
 }
